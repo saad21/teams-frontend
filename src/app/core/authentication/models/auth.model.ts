@@ -1,0 +1,23 @@
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
+export interface LoginResponse {
+  token: string;
+  refreshToken: string;
+  expiresIn: number;
+  user: User;
+}
+
+export interface SignupRequest {
+  email: string;
+  password: string;
+  name: string;
+}
+
+export interface User {
+  id: string;
+  email: string;
+  name: string;
+}
